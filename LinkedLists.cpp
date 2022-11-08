@@ -41,5 +41,19 @@ int main()
         current = current->link;
     }
 
+    // find the sum of the data items in the list
+
+    current = first;
+    int sum = 0;
+    while (current != NULL)
+    {
+        sum += current->data;
+        current = current->link;
+
+    }
+
+    cout << sum << endl;
+
+
 
 }
