@@ -74,12 +74,30 @@ int main()
     current->link = &n;
 
 
+    
+
+
+
+    // How to insert a node at the end of the list
+    // 1. 
+    // 2. 
+
+
+    // How to insert a node at the start of the list 
+    //1. create the new node
+
+    nodeType newNode; newNode.data = 20; 
+
+    // 2. Add at the start 
+
+    newNode.link = first; 
+    first = &newNode;
+
     current = first;
     while (current != NULL)
     {
-        cout << current->data<<endl;
+        cout << current->data << endl;
         current = current->link;
     }
-
 
 }
