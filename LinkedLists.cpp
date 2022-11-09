@@ -37,7 +37,7 @@ int main()
 
     while (current != NULL)
     {
-        cout << current->data<<endl;
+        //cout << current->data<<endl;
         current = current->link;
     }
 
@@ -52,8 +52,34 @@ int main()
 
     }
 
-    cout << sum << endl;
+   // cout << sum << endl;
 
+    // find the max and the min 
+
+    // insert a new node: between d2 and d3 
+    // create the new node
+    nodeType n; n.data = 90;
+
+    // insert the node (it will be inserted after index 1)
+    int currentIndex = 0;
+    current = first;// reset the current pointer 
+    while (currentIndex != 1)
+    {
+        currentIndex += 1;
+        current = current->link; 
+    }
+
+   //  cout << current->data << endl;
+    n.link = current->link;
+    current->link = &n;
+
+
+    current = first;
+    while (current != NULL)
+    {
+        cout << current->data<<endl;
+        current = current->link;
+    }
 
 
 }
